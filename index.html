@@ -1,0 +1,1945 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حور | تصوير فوتوغرافي محترف · بكادر نسائي وخصوصية تامة</title>
+  <meta name="description" content="خدمات تصوير فوتوغرافي احترافية — أعراس، خطوبة، تخرج، وجلسات خاصة بكادر نسائي 100% يضمن الخصوصية التامة والراحة الكاملة أينما كنتم." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235A5D46'%3E%3Cpath d='M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: El Messiri (Headings) & Alexandria (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FAF6F0',
+            sand: '#F3ECE1',
+            olive: '#5A5D46',
+            'olive-dark': '#434633',
+            'olive-soft': '#E6E4D8',
+            apricot: '#C87D55',
+            'apricot-dark': '#A85D35',
+            walnut: '#3D2E24',
+            mocha: '#6E655C',
+          },
+          fontFamily: {
+            messiri: ["'El Messiri'", 'serif'],
+            alexandria: ["'Alexandria'", 'sans-serif'],
+          },
+          borderRadius: {
+            'arch': '999px 999px 24px 24px',
+            'arch-lg': '999px 999px 36px 36px',
+            'arch-sm': '999px 999px 16px 16px',
+          },
+          boxShadow: {
+            'satin': '0 10px 30px -5px rgba(90, 93, 70, 0.08), 0 4px 12px -2px rgba(43, 37, 32, 0.04)',
+            'satin-hover': '0 20px 40px -10px rgba(90, 93, 70, 0.16), 0 8px 16px -4px rgba(43, 37, 32, 0.06)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ─── Global Editorial Typography & Palette ───────────────────────── */
+    html {
+      scroll-behavior: smooth;
+      background-color: #FAF6F0;
+    }
+    body {
+      font-family: 'Alexandria', sans-serif;
+      background-color: #FAF6F0;
+      color: #3D2E24;
+      overflow-x: hidden;
+      line-height: 1.7;
+      letter-spacing: -0.01em;
+    }
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'El Messiri', serif;
+      letter-spacing: normal;
+    }
+
+    /* ─── Arch Frame Shapes ───────────────────────────────────────────── */
+    .arch-frame {
+      border-radius: 999px 999px 24px 24px;
+      overflow: hidden;
+      position: relative;
+    }
+    .arch-frame-lg {
+      border-radius: 999px 999px 36px 36px;
+      overflow: hidden;
+      position: relative;
+    }
+    .arch-frame-sm {
+      border-radius: 999px 999px 18px 18px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* ─── Custom Scrollbar ────────────────────────────────────────────── */
+    ::-webkit-scrollbar {
+      width: 9px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF6F0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #E6E4D8;
+      border-radius: 10px;
+      border: 2px solid #FAF6F0;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #5A5D46;
+    }
+
+    /* ─── Sticky Navbar Glassmorphism ─────────────────────────────────── */
+    #navbar {
+      transition: background-color 0.35s ease, backdrop-filter 0.35s ease, box-shadow 0.35s ease, padding 0.35s ease;
+      background: rgba(250, 246, 240, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(230, 228, 216, 0.7);
+    }
+    #navbar.scrolled {
+      background: rgba(250, 246, 240, 0.96);
+      box-shadow: 0 4px 20px -2px rgba(43, 37, 32, 0.05);
+      border-bottom-color: #E6E4D8;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+
+    /* ─── Nav Links ───────────────────────────────────────────────────── */
+    .nav-link {
+      position: relative;
+      transition: color 0.25s ease;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background-color: #5A5D46;
+      border-radius: 2px;
+      transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* ─── Buttons ─────────────────────────────────────────────────────── */
+    .btn-olive {
+      background-color: #5A5D46;
+      color: #FAF6F0;
+      border-radius: 9999px;
+      padding: 0.75rem 1.75rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 4px 14px -2px rgba(90, 93, 70, 0.25);
+    }
+    .btn-olive:hover {
+      background-color: #434633;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px -3px rgba(90, 93, 70, 0.35);
+    }
+    .btn-olive:active {
+      transform: translateY(0);
+    }
+
+    .btn-outline-olive {
+      background-color: transparent;
+      color: #5A5D46;
+      border: 1.5px solid #5A5D46;
+      border-radius: 9999px;
+      padding: 0.75rem 1.75rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-outline-olive:hover {
+      background-color: #5A5D46;
+      color: #FAF6F0;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px -3px rgba(90, 93, 70, 0.2);
+    }
+    .btn-outline-olive:active {
+      transform: translateY(0);
+    }
+
+    /* ─── Section Tags / Badges ───────────────────────────────────────── */
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      background-color: #F3ECE1;
+      color: #5A5D46;
+      border: 1px solid #E6E4D8;
+    }
+
+    /* ─── Pricing Card ────────────────────────────────────────────────── */
+    .package-card {
+      background: #FFFFFF;
+      border: 1.5px solid #E6E4D8;
+      border-radius: 28px;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      display: flex;
+      flex-col: column;
+    }
+    .package-card:hover {
+      transform: translateY(-6px);
+      border-color: #5A5D46;
+      box-shadow: 0 20px 45px -10px rgba(90, 93, 70, 0.14);
+    }
+    .package-card.featured {
+      background: #FAF6F0;
+      border-color: #5A5D46;
+      box-shadow: 0 14px 35px -8px rgba(90, 93, 70, 0.18);
+    }
+
+    /* ─── Retouch Slider ──────────────────────────────────────────────── */
+    #retouch-slider-container {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      touch-action: pan-y;
+      border-radius: 32px;
+      border: 2px solid #E6E4D8;
+    }
+    #retouch-before-wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      overflow: hidden;
+      border-left: 2px solid #FAF6F0;
+      box-shadow: -4px 0 15px rgba(43, 37, 32, 0.15);
+    }
+    #retouch-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 50%;
+      width: 3px;
+      background: #FAF6F0;
+      transform: translateX(50%);
+      pointer-events: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    }
+    #retouch-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #FAF6F0;
+      border: 2.5px solid #5A5D46;
+      box-shadow: 0 6px 20px rgba(43, 37, 32, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #5A5D46;
+      font-size: 14px;
+      cursor: ew-resize;
+    }
+
+
+    /* ─── Gallery Items Grid ─────────────────────────────────────────── */
+    .gallery-card {
+      transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .gallery-card.hidden-card {
+      display: none;
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    /* ─── Lightbox Modal ──────────────────────────────────────────────── */
+    #lightbox-modal {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+    #lightbox-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    /* ─── Reveal on Scroll ────────────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── Botanical Line-art SVGs ─────────────────────────────────────── */
+    .botanical-art {
+      pointer-events: none;
+      opacity: 0.16;
+      stroke: #5A5D46;
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-walnut font-alexandria antialiased selection:bg-olive selection:text-cream">
+
+  <!-- ══════════════════════════════════════════════════════════════
+       A. STICKY GLASSMORPHISM NAVBAR
+  ═══════════════════════════════════════════════════════════════ -->
+  <header class="fixed top-0 left-0 right-0 z-50">
+    <nav id="navbar" class="py-3.5 px-4 md:px-8">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+
+        <!-- Right: Brand Logo with Camera & Arch Icon -->
+        <a href="#hero" class="flex items-center gap-2.5 text-walnut group no-underline flex-shrink-0" aria-label="الصفحة الرئيسية - حور">
+          <div class="w-10 h-10 arch-frame-sm bg-sand border border-olive-soft flex items-center justify-center text-olive group-hover:bg-olive group-hover:text-cream transition-colors duration-300">
+            <!-- Camera & Arch Minimal Icon -->
+            <svg class="w-5 h-5 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading text-2xl font-bold tracking-tight text-apricot-dark leading-none">حور</span>
+            <span class="text-[10px] text-mocha font-medium tracking-wide mt-0.5">تصوير فوتوغرافي محترف</span>
+          </div>
+        </a>
+
+        <!-- Center: Desktop Nav Links -->
+        <div class="hidden lg:flex items-center gap-6 xl:gap-7">
+          <a href="#gallery" class="nav-link text-mocha hover:text-walnut text-sm font-medium">المعرض</a>
+          <a href="#retouch" class="nav-link text-mocha hover:text-walnut text-sm font-medium">قبل وبعد</a>
+          <a href="#packages" class="nav-link text-mocha hover:text-walnut text-sm font-medium">الجلسات والباقات</a>
+          <a href="#philosophy" class="nav-link text-mocha hover:text-walnut text-sm font-medium">رؤيتنا</a>
+          <a href="#rules" class="nav-link text-mocha hover:text-walnut text-sm font-medium">القوانين والحجز</a>
+        </div>
+
+        <!-- Left: Pill CTA Button -->
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/9647724679701?text=السلام عليكم 👋 أود الاستفسار وحجز موعد جلسة تصوير 📸"
+             target="_blank" rel="noopener noreferrer"
+             class="btn-olive text-xs md:text-sm py-2.5 px-5 shadow-sm whitespace-nowrap">
+            <span>احجزي جلستج هسه</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button id="menu-btn" class="lg:hidden p-2 rounded-full text-walnut hover:bg-sand focus:outline-none transition-colors" aria-label="فتح القائمة">
+            <svg id="menu-icon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden border-t border-olive-soft mt-3 pt-3 pb-2 px-2 space-y-1">
+        <a href="#gallery" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-sm font-medium text-mocha hover:bg-sand hover:text-walnut">المعرض</a>
+        <a href="#retouch" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-sm font-medium text-mocha hover:bg-sand hover:text-walnut">قبل وبعد</a>
+        <a href="#packages" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-sm font-medium text-mocha hover:bg-sand hover:text-walnut">الجلسات والباقات</a>
+        <a href="#philosophy" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-sm font-medium text-mocha hover:bg-sand hover:text-walnut">رؤيتنا</a>
+        <a href="#rules" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-sm font-medium text-mocha hover:bg-sand hover:text-walnut">القوانين والحجز</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ══════════════════════════════════════════════════════════════
+         B. EDITORIAL HERO SECTION (NO STATS HERE)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-cream">
+      
+      <!-- Delicate Minimalist Botanical Line-art SVGs (Corner Accents) -->
+      <svg class="botanical-art absolute -top-12 -right-12 w-80 h-80 z-0" viewBox="0 0 200 200" fill="none">
+        <path d="M40,160 Q80,100 160,40" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M70,120 Q55,100 65,85 Q75,100 70,120 Z" stroke-width="1.2" fill="#FAF6F0"/>
+        <path d="M100,95 Q90,75 105,65 Q115,80 100,95 Z" stroke-width="1.2" fill="#FAF6F0"/>
+        <path d="M130,70 Q120,50 135,40 Q145,55 130,70 Z" stroke-width="1.2" fill="#FAF6F0"/>
+        <circle cx="160" cy="40" r="3" fill="#5A5D46"/>
+      </svg>
+      <svg class="botanical-art absolute bottom-0 left-0 w-72 h-72 z-0" viewBox="0 0 200 200" fill="none">
+        <path d="M160,200 Q120,120 40,60" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M130,150 Q145,135 135,120 Q125,135 130,150 Z" stroke-width="1.2" fill="#FAF6F0"/>
+        <path d="M95,110 Q110,95 100,80 Q90,95 95,110 Z" stroke-width="1.2" fill="#FAF6F0"/>
+      </svg>
+
+      <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+
+          <!-- Right Column: Poetic Headline & Actions -->
+          <div class="lg:col-span-7 flex flex-col items-start text-right reveal">
+            
+            <!-- Poetic Philosophy Badge -->
+            <div class="section-tag mb-6 border-apricot/30 text-apricot-dark">
+              <span class="w-2 h-2 rounded-full bg-apricot animate-pulse"></span>
+              <span>✨ أنتم تختارون المكان، ونحن نخلّد الحكاية</span>
+            </div>
+
+            <!-- Poetic Headline in El Messiri -->
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-apricot-dark leading-[1.25] mb-6">
+              نوثق يومكم بعناية..<br />
+              <span class="text-olive inline-block">حتى يبقى ذكرى ما تنسى</span>
+            </h1>
+
+            <!-- Warm Subheadline Highlighting Female Crew Privacy -->
+            <p class="text-base sm:text-lg text-mocha font-normal leading-relaxed mb-8 max-w-xl">
+              خصوصية تامة وراحة كاملة بكادر نسائي محترف يعتني بأدق تفاصيل فرحتج. من لمسات فستان الزفاف وابتسامة التخرج إلى دفء الجلسات العائلية، نصنع صوراً تحكي مشاعرج الصادقة وتبقى خالدة عبر السنين.
+            </p>
+
+            <!-- Dual CTA Action Buttons -->
+            <div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+              <a href="#packages" class="btn-olive text-sm sm:text-base py-3.5 px-8 w-full sm:w-auto">
+                <span>اختاري جلستج</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <a href="#gallery" class="btn-outline-olive text-sm sm:text-base py-3.5 px-8 w-full sm:w-auto">
+                <span>تصفحي المعرض</span>
+              </a>
+            </div>
+
+            <!-- Privacy Guarantee Micro Note -->
+            <div class="mt-8 pt-6 border-t border-olive-soft w-full flex items-center gap-3 text-xs sm:text-sm text-mocha">
+              <div class="w-6 h-6 rounded-full bg-sand border border-apricot/30 flex items-center justify-center text-apricot flex-shrink-0">
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <span>أمانة كاملة وحفظ لخصوصية الصور العائلية والمحجبات بنسبة 100%</span>
+            </div>
+
+          </div>
+
+          <!-- Left Column: Artistic Overlapping Arch Duo Frame -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end reveal" style="transition-delay: 0.15s;">
+            <div class="relative w-full max-w-md sm:max-w-lg aspect-[4/5] flex items-center justify-center">
+              
+              <!-- Background Decorative Oval Shadow Glow -->
+              <div class="absolute inset-x-8 top-12 bottom-6 bg-sand rounded-arch-lg border border-olive-soft -rotate-3 z-0"></div>
+
+              <!-- Main Arch Frame (Wedding / Bride) -->
+              <div class="relative z-10 w-[78%] h-[92%] arch-frame bg-sand border-2 border-olive-soft shadow-satin overflow-hidden">
+                <img
+                  src="images/hero-main.webp"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=1000&q=80&auto=format&fit=crop';"
+                  alt="توثيق احترافي للأعراس والمناسبات"
+                  class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  loading="eager"
+                />
+                <!-- Subtle Gradient Vignette at the bottom -->
+                <div class="absolute inset-0 bg-gradient-to-t from-walnut/30 via-transparent to-transparent pointer-events-none"></div>
+              </div>
+
+              <!-- Sub Overlapping Arch Frame (Graduation / Detail) -->
+              <div class="absolute -bottom-4 -left-2 sm:-left-4 z-20 w-[46%] h-[56%] arch-frame bg-cream border-2 border-olive shadow-satin-hover overflow-hidden">
+                <img
+                  src="images/hero-sub.webp"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80&auto=format&fit=crop';"
+                  alt="جلسات تخرج راقية"
+                  class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  loading="eager"
+                />
+              </div>
+
+              <!-- Floating Editorial Badge -->
+              <div class="absolute -top-3 right-0 sm:right-2 z-30 bg-cream/95 backdrop-blur-md border border-olive-soft rounded-2xl px-4 py-2.5 shadow-satin flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-apricot"></span>
+                <span class="text-xs font-semibold text-apricot-dark">كادر نسائي متخصص 100%</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         C. INTERACTIVE SESSION PACKAGES HUB (3 TABS)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="packages" class="py-24 bg-sand relative border-t border-olive-soft/60">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+          <span class="section-tag mb-3 border-apricot/20 text-apricot-dark">💎 تفاصيل العروض والأسعار</span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-apricot-dark mt-2 mb-4">
+            اختاري الجلسة والباقة المناسبة الج
+          </h2>
+          <p class="text-mocha text-sm sm:text-base leading-relaxed">
+            باقات متكاملة ومصممة بعناية لتناسب كل مرحلة وتخلد أسعد لحظاتج، مع ألبومات حرارية ملكية وفيديوهات ريلز مجانية بأسعار واضحة وشفافة بالدينار العراقي.
+          </p>
+        </div>
+
+        <!-- 5 Interactive Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12 reveal">
+          <button onclick="switchTab('eng')" id="tab-btn-eng" class="tab-btn active px-4 sm:px-6 py-3 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-olive text-cream shadow-sm">
+            💍 عروض الخطوبة
+          </button>
+          <button onclick="switchTab('grad')" id="tab-btn-grad" class="tab-btn px-4 sm:px-6 py-3 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-cream text-mocha border border-olive-soft hover:border-olive">
+            🎓 عروض التخرج
+          </button>
+          <button onclick="switchTab('wedding')" id="tab-btn-wedding" class="tab-btn px-4 sm:px-6 py-3 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-cream text-mocha border border-olive-soft hover:border-olive">
+            👰 عروض العرس (الزفاف)
+          </button>
+          <button onclick="switchTab('henna')" id="tab-btn-henna" class="tab-btn px-4 sm:px-6 py-3 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-cream text-mocha border border-olive-soft hover:border-olive">
+            🌿 عروض الحنة
+          </button>
+          <button onclick="switchTab('maternity')" id="tab-btn-maternity" class="tab-btn px-4 sm:px-6 py-3 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-cream text-mocha border border-olive-soft hover:border-olive">
+            🍼 جلسات الحمل والميلاد
+          </button>
+        </div>
+
+        <!-- Dynamic Content Container -->
+        <div id="tab-content-area" class="transition-opacity duration-300">
+          <!-- TAB 1: ENGAGEMENT (DEFAULT ACTIVE) -->
+          <div id="tab-panel-eng" class="tab-panel block">
+            
+            <!-- Top Arch Trio Showcase (Engagement) -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-4xl mx-auto mb-12">
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/eng-1.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80&auto=format&fit=crop';" alt="عروض الخطوبة 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border-2 border-olive shadow-satin-hover overflow-hidden -translate-y-2">
+                <img src="images/eng-2.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?w=800&q=80&auto=format&fit=crop';" alt="عروض الخطوبة 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/eng-3.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80&auto=format&fit=crop';" alt="عروض الخطوبة 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- 4 Pricing Cards (Engagement) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+              
+              <!-- Card 1: Silver Package -->
+              <div class="package-card flex flex-col p-6 justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">الباقة الفضية للخطوبة</span>
+                  <h3 class="font-heading text-xl sm:text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج الفضي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">150,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (150 ألف)</span>
+                  </div>
+                  <ul class="space-y-2.5 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور مفتوح أثناء التصوير</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم شامو 15 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>✨</span><span>رمزيات وتفاصيل الكوشة والعرسان</span></li>
+                    <li class="flex items-start gap-2"><span>⏱️</span><span>وقت التواجد: <strong>ساعة ونصف</strong></span></li>
+                  </ul>
+                  <div class="mt-4 p-2.5 rounded-xl bg-sand/60 border border-olive-soft/70 text-[11px] text-mocha leading-relaxed">
+                    📍 <strong>ملاحظة:</strong> السعر لا يشمل الصور الجماعية | هذا البكج داخل المقدادية فقط.
+                  </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20الفضي%20للخطوبة:%20150%20ألف%20د.ع)%20💍" target="_blank" rel="noopener noreferrer" class="btn-outline-olive w-full text-xs sm:text-sm py-2.5 text-center block">احجزي هذا البكج</a>
+                </div>
+              </div>
+
+              <!-- Card 2: Golden Package (Featured) -->
+              <div class="package-card featured flex flex-col p-6 justify-between relative">
+                <div class="absolute -top-3.5 right-6 bg-olive text-cream text-[11px] font-bold py-1 px-3.5 rounded-full shadow-sm">
+                  الأكثر طلباً ⭐
+                </div>
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-cream px-3 py-1 rounded-full border border-olive-soft">الباقة المحبوبة للخطوبة</span>
+                  <h3 class="font-heading text-xl sm:text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج الذهبي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft">
+                    <span class="font-heading text-3xl font-bold text-olive">250,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (250 ألف)</span>
+                  </div>
+                  <ul class="space-y-2.5 text-xs sm:text-sm text-walnut">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور مفتوح</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم قديفة راقي 15 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>✒️</span><span>حفر أسماء العرسان</span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span>طباعة صور ورقية 10</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>طباعة صورة منضدية</span></li>
+                    <li class="flex items-start gap-2"><span>✨</span><span>رمزيات وتفاصيل</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span>ريلز قصير</span></li>
+                    <li class="flex items-start gap-2"><span>⏱️</span><span>وقت التواجد: <strong>ساعتين</strong></span></li>
+                  </ul>
+                  <div class="mt-4 p-2.5 rounded-xl bg-cream border border-olive-soft text-[11px] text-mocha leading-relaxed">
+                    📍 <strong>ملاحظة:</strong> السعر لا يشمل الصور الجماعية | يضاف أجور النقل حسب المنطقة خارج المقدادية والمحافظة.
+                  </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-olive-soft">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20الذهبي%20للخطوبة:%20250%20ألف%20د.ع)%20💍⭐" target="_blank" rel="noopener noreferrer" class="btn-olive w-full text-xs sm:text-sm py-2.5 text-center block">احجزي هذا البكج</a>
+                </div>
+              </div>
+
+              <!-- Card 3: VIP Package -->
+              <div class="package-card flex flex-col p-6 justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">تجربة VIP للخطوبة</span>
+                  <h3 class="font-heading text-xl sm:text-2xl font-bold text-apricot-dark mt-3 mb-1">بكج VIP</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">300,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (300 ألف)</span>
+                  </div>
+                  <ul class="space-y-2.5 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور مفتوح</span></li>
+                    <li class="flex items-start gap-2"><span>👑</span><span>طباعة ألبوم كبير داخل الألبوم 20 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>جدارية</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>منضديات 2</span></li>
+                    <li class="flex items-start gap-2"><span>✨</span><span>رمزيات وتفاصيل</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span>ريلز</span></li>
+                    <li class="flex items-start gap-2"><span>⏱️</span><span>وقت التواجد: <strong>3 ساعات</strong></span></li>
+                  </ul>
+                  <div class="mt-4 p-2.5 rounded-xl bg-sand/60 border border-olive-soft/70 text-[11px] text-mocha leading-relaxed">
+                    📍 <strong>ملاحظة:</strong> لا يشمل الصور الجماعية | يضاف أجور النقل حسب المنطقة.
+                  </div>
+                </div>
+                <div class="mt-6 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(بكج%20VIP%20للخطوبة:%20300%20ألف%20د.ع)%20💍👑" target="_blank" rel="noopener noreferrer" class="btn-outline-olive w-full text-xs sm:text-sm py-2.5 text-center block">احجزي هذا البكج</a>
+                </div>
+              </div>
+
+              <!-- Card 4: Diamond Comprehensive Package -->
+              <div class="package-card flex flex-col p-6 justify-between relative bg-sand/40 border-olive/50">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">العرض الماسي الشامل 💎</span>
+                  <h3 class="font-heading text-xl sm:text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج الماسي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">650,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (650 ألف)</span>
+                  </div>
+                  <ul class="space-y-2 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور مفتوح أثناء الحفلة</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم حجم كبير 30-60 يحتوي 25-30 لقطة</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>جدارية</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>منضديات 2</span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span>طباعة 25 صورة ورقية</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span>تصوير الحفل كامل فيديو</span></li>
+                    <li class="flex items-start gap-2"><span>🎬</span><span>تصوير كواليس وريلزات</span></li>
+                    <li class="flex items-start gap-2"><span>💾</span><span>تسليم الفيديو كامل بفلاش مع الصور</span></li>
+                    <li class="flex items-start gap-2"><span>⏱️</span><span>وقت التواجد: <strong>4-5 ساعات</strong></span></li>
+                    <li class="flex items-start gap-2"><span>👥</span><span>تصوير الأهل صور جماعية 10-14 صورة</span></li>
+                  </ul>
+                </div>
+                <div class="mt-6 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20الماسي%20الشامل%20للخطوبة:%20650%20ألف%20د.ع)%20💍💎" target="_blank" rel="noopener noreferrer" class="btn-olive w-full text-xs sm:text-sm py-2.5 text-center block">احجزي هذا العرض</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- TAB 2: GRADUATION -->
+          <div id="tab-panel-grad" class="tab-panel hidden">
+            
+            <!-- Top Arch Trio Showcase (Graduation) -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-4xl mx-auto mb-12">
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/grad-1.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80&auto=format&fit=crop';" alt="جلسات تخرج 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border-2 border-olive shadow-satin-hover overflow-hidden -translate-y-2">
+                <img src="images/grad-2.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?w=800&q=80&auto=format&fit=crop';" alt="جلسات تخرج 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/grad-3.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80&auto=format&fit=crop';" alt="جلسات تخرج 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- 3 Pricing Cards (Graduation) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10">
+              
+              <!-- Offer 1: Golden Offer -->
+              <div class="package-card flex flex-col p-7 justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">الباقة الذهبية للتخرج</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">العرض الذهبي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">125,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📖</span><span><strong>ألبوم مجلة</strong> (15 صورة)</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span><strong>صورة منضدية وسط</strong> + 5 صور ورقية</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span><strong>2 ريلز فيديو بسيط</strong> هدية مع الباقة</span></li>
+                    <li class="flex items-start gap-2"><span>📲</span><span>صور مفتوحة وإرسال الكل تليجرام بدقة عالية</span></li>
+                  </ul>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(العرض%20الذهبي%20للتخرج:%20125,000%20د.ع)%20🎓" target="_blank" rel="noopener noreferrer" class="btn-outline-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا العرض</a>
+                </div>
+              </div>
+
+              <!-- Offer 2: Diamond VIP (Featured) -->
+              <div class="package-card featured flex flex-col p-7 justify-between relative">
+                <div class="absolute -top-3.5 right-6 bg-olive text-cream text-[11px] font-bold py-1 px-3.5 rounded-full shadow-sm">
+                  الأكثر تميزاً ⭐
+                </div>
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-cream px-3 py-1 rounded-full border border-olive-soft">تجربة تخرج VIP ⭐</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج VIP الماسي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft">
+                    <span class="font-heading text-3xl font-bold text-olive">200,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-walnut">
+                    <li class="flex items-start gap-2"><span>👑</span><span><strong>ألبوم راقي (20 صورة) بحفر الاسم</strong></span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span><strong>جدارية فخمة + صورة منضدية</strong></span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span><strong>10 صور مطبوعة ورقية</strong></span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span><strong>فيديو تفاصيل الخريجة كامل احترافي</strong></span></li>
+                    <li class="flex items-start gap-2"><span>📲</span><span>صور مفتوحة وإرسال كافة اللقطات على التليجرام</span></li>
+                  </ul>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20VIP%20الماسي%20للتخرج:%20200,000%20د.ع)%20🎓👑" target="_blank" rel="noopener noreferrer" class="btn-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا العرض</a>
+                </div>
+              </div>
+
+              <!-- Offer 3: Group Graduation Package -->
+              <div class="package-card flex flex-col p-7 justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">عروض المجموعات</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج الجماعي للخريجات</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">75,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع / للطالبة</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>👥</span><span>مخصص للمجموعات (<strong>3 خريجات فما فوق</strong>)</span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span><strong>15 صورة مطبوعة لكل طالبة</strong></span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span><strong>صورة جدارية للمجموعة</strong></span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span><strong>فيديو ريلز جماعي مميز</strong> للمجموعة</span></li>
+                    <li class="flex items-start gap-2"><span>📲</span><span>إرسال كافة الصور على التليجرام بدقة كاملة</span></li>
+                  </ul>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20الجماعي%20للخريجات:%2075,000%20د.ع%20للطالبة)%20🎓👭" target="_blank" rel="noopener noreferrer" class="btn-outline-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي للمجموعة</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- TAB 3: WEDDING -->
+          <div id="tab-panel-wedding" class="tab-panel hidden">
+            
+            <!-- Top Arch Trio Showcase (Wedding) -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-4xl mx-auto mb-12">
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/wed-1.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80&auto=format&fit=crop';" alt="عروض العرس والزفاف 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border-2 border-olive shadow-satin-hover overflow-hidden -translate-y-2">
+                <img src="images/wed-2.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=800&q=80&auto=format&fit=crop';" alt="عروض العرس والزفاف 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/wed-3.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=800&q=80&auto=format&fit=crop';" alt="عروض العرس والزفاف 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- 3 Pricing Cards (Wedding) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10">
+              
+              <!-- Offer 1: Silver Package -->
+              <div class="package-card flex flex-col p-7 justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">الباقة الفضية للعرس</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج الفضي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">250,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (250 ألف)</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور أثناء الجلسة مفتوح</span></li>
+                    <li class="flex items-start gap-2"><span>✨</span><span>تعديل 20 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم قياس 30-40 يحتوي 12 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>📦</span><span>بوكس الألبوم الفاخر</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>جدارية</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>منضدي 2</span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span>طباعة 5 صور ورقية</span></li>
+                  </ul>
+                  <div class="mt-5 p-3 rounded-xl bg-sand/60 border border-olive-soft/70 text-[11px] text-mocha leading-relaxed">
+                    📍 <strong>ملاحظة:</strong> السعر لا يشمل أجور موقع التصوير.
+                  </div>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20الفضي%20للعرس:%20250%20ألف%20د.ع)%20👰" target="_blank" rel="noopener noreferrer" class="btn-outline-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا البكج</a>
+                </div>
+              </div>
+
+              <!-- Offer 2: Golden Package (Featured) -->
+              <div class="package-card featured flex flex-col p-7 justify-between relative">
+                <div class="absolute -top-3.5 right-6 bg-olive text-cream text-[11px] font-bold py-1 px-3.5 rounded-full shadow-sm">
+                  الأكثر طلباً ⭐
+                </div>
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-cream px-3 py-1 rounded-full border border-olive-soft">الباقة المحبوبة للعرس</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج الذهبي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft">
+                    <span class="font-heading text-3xl font-bold text-olive">300,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (300 ألف)</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-walnut">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور أثناء الجلسة مفتوح</span></li>
+                    <li class="flex items-start gap-2"><span>✨</span><span>تعديل 22 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم قياس 30-40 يحتوي 15 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>📦</span><span>بوكس الألبوم</span></li>
+                    <li class="flex items-start gap-2"><span>📕</span><span>ميني ألبوم يحتوي 4 صور</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>جدارية</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>منضدي 2</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span>ريلز قصير</span></li>
+                  </ul>
+                  <div class="mt-5 p-3 rounded-xl bg-cream border border-olive-soft text-[11px] text-mocha leading-relaxed">
+                    📍 <strong>ملاحظة:</strong> السعر لا يشمل أجور موقع التصوير.
+                  </div>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20الذهبي%20للعرس:%20300%20ألف%20د.ع)%20👰⭐" target="_blank" rel="noopener noreferrer" class="btn-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا البكج</a>
+                </div>
+              </div>
+
+              <!-- Offer 3: Diamond Package -->
+              <div class="package-card flex flex-col p-7 justify-between relative bg-sand/30 border-olive/50">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">البكج الفخم المتكامل 💎</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج الماسي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">400,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (400 ألف)</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور مفتوح أثناء الجلسة</span></li>
+                    <li class="flex items-start gap-2"><span>✨</span><span>تعديل 25 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم كبير فخم يحتوي 20 صورة (قياس 30-60)</span></li>
+                    <li class="flex items-start gap-2"><span>📦</span><span>بوكس الألبوم</span></li>
+                    <li class="flex items-start gap-2"><span>📕</span><span>ميني ألبوم يحتوي 4 صور</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>جدارية قياس كبير</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>منضدي 2</span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span>طباعة 15 صورة ورقية</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span>ريلز متوسط الطول</span></li>
+                  </ul>
+                  <div class="mt-5 p-3 rounded-xl bg-sand/60 border border-olive-soft/70 text-[11px] text-mocha leading-relaxed">
+                    📍 <strong>ملاحظة:</strong> السعر لا يشمل أجور موقع التصوير.
+                  </div>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20الماسي%20للعرس:%20400%20ألف%20د.ع)%20👰💎" target="_blank" rel="noopener noreferrer" class="btn-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا العرض</a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Special Upgrade Banner under Tab 3 -->
+            <div class="bg-gradient-to-r from-olive to-olive-dark text-cream rounded-3xl p-6 sm:p-8 shadow-satin relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
+              <!-- Subtle Decorative Arch SVG in Background -->
+              <svg class="absolute -bottom-10 -left-10 w-60 h-60 opacity-10 text-cream pointer-events-none" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50,0 C77.6,0 100,22.4 100,50 L100,100 L0,100 L0,50 C0,22.4 22.4,0 50,0 Z"></path>
+              </svg>
+              <div class="relative z-10">
+                <span class="inline-block bg-cream/20 text-cream text-xs font-semibold px-3 py-1 rounded-full mb-3">✨ ترقية إضافية مميزة</span>
+                <h3 class="font-heading text-xl sm:text-2xl font-bold mb-2">🎥 يوجد تصوير مشية رجالي محترف (أرضي + جوي) — بسعر: 150 ألف فقط</h3>
+                <p class="text-cream/85 text-xs sm:text-sm max-w-2xl leading-relaxed">
+                  يمكن إضافة هذه التغطية لأي من باقات الأعراس لتغطية مشية العريس بلقطات أرضية وجوية سينمائية احترافية تخلد كل خطوة من البداية.
+                </p>
+              </div>
+              <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20الاستفسار%20وإضافة%20(تصوير%20مشية%20رجالي%20أرضي%20+%20جوي:%20150%20ألف%20د.ع)%20مع%20حجز%20العرس%20🎥✨" target="_blank" rel="noopener noreferrer" class="relative z-10 bg-cream hover:bg-sand text-olive font-semibold px-6 py-3 rounded-full text-xs sm:text-sm whitespace-nowrap transition-colors duration-200 shadow-sm flex-shrink-0">
+                إضافة تصوير المشية 💬
+              </a>
+            </div>
+
+          </div>
+
+          <!-- TAB 4: HENNA -->
+          <div id="tab-panel-henna" class="tab-panel hidden">
+            
+            <!-- Top Arch Trio Showcase (Henna) -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-4xl mx-auto mb-12">
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/henna-1.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1584285418504-0051ecde5550?w=800&q=80&auto=format&fit=crop';" alt="عروض الحنة 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border-2 border-olive shadow-satin-hover overflow-hidden -translate-y-2">
+                <img src="images/henna-2.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=800&q=80&auto=format&fit=crop';" alt="عروض الحنة 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/henna-3.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&q=80&auto=format&fit=crop';" alt="عروض الحنة 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- 3 Pricing Cards (Henna) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10">
+              
+              <!-- Henna Card 1: Silver Package -->
+              <div class="package-card flex flex-col p-7 justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">الباقة الفضية للحنة</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج الفضي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">150,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (150 ألف)</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور مفتوح أثناء التصوير</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم شامو 15 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>✨</span><span>رمزيات وتفاصيل الكوشة</span></li>
+                    <li class="flex items-start gap-2"><span>⏱️</span><span>وقت التواجد: <strong>ساعة ونصف</strong></span></li>
+                  </ul>
+                  <div class="mt-5 p-3 rounded-xl bg-sand/60 border border-olive-soft/70 text-[11px] text-mocha leading-relaxed">
+                    📍 <strong>ملاحظة:</strong> السعر لا يشمل الصور الجماعية | هذا البكج داخل المقدادية فقط.
+                  </div>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20الفضي%20للحنة:%20150%20ألف%20د.ع)%20🌿" target="_blank" rel="noopener noreferrer" class="btn-outline-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا البكج</a>
+                </div>
+              </div>
+
+              <!-- Henna Card 2: Golden Package (Featured) -->
+              <div class="package-card featured flex flex-col p-7 justify-between relative">
+                <div class="absolute -top-3.5 right-6 bg-olive text-cream text-[11px] font-bold py-1 px-3.5 rounded-full shadow-sm">
+                  الأكثر طلباً ⭐
+                </div>
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-cream px-3 py-1 rounded-full border border-olive-soft">الباقة المحبوبة للحنة</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">البكج الذهبي</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft">
+                    <span class="font-heading text-3xl font-bold text-olive">250,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (250 ألف)</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-walnut">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور مفتوح</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم قديفة راقي 15 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>✒️</span><span>حفر أسماء</span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span>طباعة صور ورقية 10</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>طباعة صورة منضدية</span></li>
+                    <li class="flex items-start gap-2"><span>✨</span><span>رمزيات وتفاصيل</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span>ريلز قصير</span></li>
+                    <li class="flex items-start gap-2"><span>⏱️</span><span>وقت التواجد: <strong>ساعتين</strong></span></li>
+                  </ul>
+                  <div class="mt-5 p-3 rounded-xl bg-cream border border-olive-soft text-[11px] text-mocha leading-relaxed">
+                    📍 <strong>ملاحظة:</strong> السعر لا يشمل الصور الجماعية | يضاف أجور النقل حسب المنطقة خارج المقدادية والمحافظة.
+                  </div>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(البكج%20الذهبي%20للحنة:%20250%20ألف%20د.ع)%20🌿⭐" target="_blank" rel="noopener noreferrer" class="btn-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا البكج</a>
+                </div>
+              </div>
+
+              <!-- Henna Card 3: VIP Package -->
+              <div class="package-card flex flex-col p-7 justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">تجربة حنة VIP الملكية</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">بكج VIP</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">300,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (300 ألف)</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور مفتوح</span></li>
+                    <li class="flex items-start gap-2"><span>👑</span><span>طباعة ألبوم كبير داخل الألبوم 20 صورة</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>جدارية</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>منضديات 2</span></li>
+                    <li class="flex items-start gap-2"><span>✨</span><span>رمزيات وتفاصيل</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span>ريلز</span></li>
+                    <li class="flex items-start gap-2"><span>⏱️</span><span>وقت التواجد: <strong>3 ساعات</strong></span></li>
+                  </ul>
+                  <div class="mt-5 p-3 rounded-xl bg-sand/60 border border-olive-soft/70 text-[11px] text-mocha leading-relaxed">
+                    📍 <strong>ملاحظة:</strong> لا يشمل الصور الجماعية | يضاف أجور النقل حسب المنطقة.
+                  </div>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(بكج%20VIP%20للحنة:%20300%20ألف%20د.ع)%20🌿👑" target="_blank" rel="noopener noreferrer" class="btn-outline-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا البكج</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- TAB 5: MATERNITY & BIRTHDAY -->
+          <div id="tab-panel-maternity" class="tab-panel hidden">
+            
+            <!-- Top Arch Trio Showcase (Maternity & Birthday) -->
+            <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-4xl mx-auto mb-12">
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/priv-1.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80&auto=format&fit=crop';" alt="جلسات الحمل والميلاد 1" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border-2 border-olive shadow-satin-hover overflow-hidden -translate-y-2">
+                <img src="images/priv-2.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80&auto=format&fit=crop';" alt="جلسات الحمل والميلاد 2" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+              <div class="arch-frame aspect-[3/4] bg-cream border border-olive-soft shadow-satin overflow-hidden">
+                <img src="images/priv-3.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80&auto=format&fit=crop';" alt="جلسات الحمل والميلاد 3" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy" />
+              </div>
+            </div>
+
+            <!-- 3 Pricing Cards (Maternity & Birthday) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-8">
+              
+              <!-- Offer 1 -->
+              <div class="package-card flex flex-col p-7 justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">العرض الأول</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">العرض الأول</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">75,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (75 ألف)</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور 14 لقطة</span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span>طباعة الصور ورقية</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>طباعة صورة منضدية A4</span></li>
+                  </ul>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(جلسة%20حمل%20أو%20ميلاد%20-%20العرض%20الأول:%2075%20ألف%20د.ع)%20🍼✨" target="_blank" rel="noopener noreferrer" class="btn-outline-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا العرض</a>
+                </div>
+              </div>
+
+              <!-- Offer 2 (Featured) -->
+              <div class="package-card featured flex flex-col p-7 justify-between relative">
+                <div class="absolute -top-3.5 right-6 bg-olive text-cream text-[11px] font-bold py-1 px-3.5 rounded-full shadow-sm">
+                  الأكثر طلباً ⭐
+                </div>
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-cream px-3 py-1 rounded-full border border-olive-soft">العرض الثاني</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">العرض الثاني</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft">
+                    <span class="font-heading text-3xl font-bold text-olive">100,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (100 ألف)</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-walnut">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور 20 لقطة</span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span>طباعة الصور ورقية</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم مجلة يحتوي 12 لقطة</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>طباعة صورة منضدية</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span>ريلز بالفون</span></li>
+                  </ul>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(جلسة%20حمل%20أو%20ميلاد%20-%20العرض%20الثاني:%20100%20ألف%20د.ع)%20🍼⭐" target="_blank" rel="noopener noreferrer" class="btn-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا العرض</a>
+                </div>
+              </div>
+
+              <!-- Offer 3 (Royal) -->
+              <div class="package-card flex flex-col p-7 justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">العرض الثالث</span>
+                  <h3 class="font-heading text-2xl font-bold text-apricot-dark mt-3 mb-1">العرض الثالث</h3>
+                  <div class="my-4 pb-4 border-b border-olive-soft/60">
+                    <span class="font-heading text-3xl font-bold text-olive">150,000</span>
+                    <span class="text-xs text-mocha font-medium mr-1">د.ع (150 ألف)</span>
+                  </div>
+                  <ul class="space-y-3 text-xs sm:text-sm text-mocha">
+                    <li class="flex items-start gap-2"><span>📸</span><span>عدد الصور 26 لقطة</span></li>
+                    <li class="flex items-start gap-2"><span>📖</span><span>طباعة ألبوم قديفة يحتوي 15 لقطة</span></li>
+                    <li class="flex items-start gap-2"><span>🖼️</span><span>طباعة صورة جدارية قياس A3</span></li>
+                    <li class="flex items-start gap-2"><span>🖨️</span><span>طباعة جميع الصور ورقية</span></li>
+                    <li class="flex items-start gap-2 font-medium text-olive"><span>🎬</span><span>ريلز بالفون</span></li>
+                  </ul>
+                </div>
+                <div class="mt-8 pt-4 border-t border-olive-soft/60">
+                  <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20حجز%20(جلسة%20حمل%20أو%20ميلاد%20-%20العرض%20الثالث:%20150%20ألف%20د.ع)%20🍼👑" target="_blank" rel="noopener noreferrer" class="btn-outline-olive w-full text-xs sm:text-sm py-3 text-center block">احجزي هذا العرض</a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Note Box in Tab 5 -->
+            <div class="bg-cream rounded-2xl border border-olive-soft p-5 max-w-3xl mx-auto text-center">
+              <p class="text-xs sm:text-sm text-mocha flex items-center justify-center gap-2">
+                <span class="text-olive text-base">✨</span>
+                <span><strong>تنويه:</strong> جميع العروض يكون عدد الصور مفتوح أثناء الجلسة وبعدها يتم الاختيار.</span>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Important General Notes Box -->
+        <div class="mt-14 bg-cream rounded-3xl p-6 sm:p-8 border border-olive-soft shadow-satin max-w-5xl mx-auto reveal">
+          <div class="flex items-center gap-3 mb-5 pb-3 border-b border-olive-soft">
+            <div class="w-8 h-8 rounded-full bg-sand flex items-center justify-center text-olive flex-shrink-0">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </div>
+            <h3 class="font-heading text-lg sm:text-xl font-bold text-apricot-dark">ملاحظات عامة وهامة حول الباقات والحجز</h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs sm:text-sm text-mocha">
+            <div class="flex items-start gap-3">
+              <span class="text-base text-olive">📍</span>
+              <div>
+                <strong class="text-walnut block mb-1">أجور النقل والتنقل:</strong>
+                <p class="leading-relaxed">الأسعار المعروضة للباقات تشمل جلسات داخل قضاء المقدادية، أما الجلسات خارج حدود القضاء أو في المحافظات فتُضاف إليها أجور النقل بحسب بُعد الموقع والاتفاق المسبق.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-base text-olive">👥</span>
+              <div>
+                <strong class="text-walnut block mb-1">الصور الجماعية:</strong>
+                <p class="leading-relaxed">الباقات الفردية مخصصة لصاحب/ة الجلسة فقط، وفي حال الرغبة بصور جماعية مع العائلة أو الأصدقاء يتم ترتيب ذلك مسبقاً وتنسيقه مع إدارة الحجز.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-base text-olive">💬</span>
+              <div>
+                <strong class="text-walnut block mb-1">تثبيت الحجز والتواصل:</strong>
+                <p class="leading-relaxed">الأسعار واضحة ومحددة بالدينار العراقي، واضغطي على زر أي باقة للانتقال فوراً لمحادثة الواتساب مع رسالة محددة بالباقة والسعر لترتيب موعدج.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         E. BACKSTAGE & CANDID VIDEO SECTION (NO DRONE)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="retouch" class="py-24 bg-cream relative">
+      <div class="max-w-5xl mx-auto px-6 md:px-12 relative z-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+          <span class="section-tag mb-3 border-apricot/20 text-apricot-dark">✨ لمسة الريتاتش الطبيعي</span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-apricot-dark mt-2 mb-3">
+            لمسة التعديل الطبيعي (قبل وبعد)
+          </h2>
+          <p class="text-mocha text-sm sm:text-base leading-relaxed">
+            نحافظ على ملامحج الطبيعية وتفاصيل البشرة النقية بدون تلطيخ أو فلاتر مبالغ فيها، مع تلوين دافئ وناعم يعطي الصورة عمقاً فوتوغرافياً راقياً يناسب الطباعة الفاخرة.
+          </p>
+        </div>
+
+        <!-- Slider Comparison Frame -->
+        <div class="reveal max-w-4xl mx-auto">
+          <div id="retouch-slider-container" class="aspect-[4/3] sm:aspect-[16/10] shadow-satin relative cursor-ew-resize">
+            
+            <!-- AFTER IMAGE (Base / Underneath) -->
+            <img
+              id="retouch-after-img"
+              src="images/after.webp"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1000&q=80&auto=format&fit=crop';"
+              alt="بعد التعديل الطبيعي"
+              class="w-full h-full object-cover pointer-events-none"
+              loading="lazy"
+            />
+            <div class="absolute top-5 left-5 z-10 bg-olive text-cream text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-md backdrop-blur-sm">
+              ✨ بعد التعديل الطبيعي
+            </div>
+
+            <!-- BEFORE IMAGE (Top Clip / Sliding Layer) -->
+            <div id="retouch-before-wrapper">
+              <img
+                id="retouch-before-img"
+                src="images/before.webp"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1000&q=30&auto=format&fit=crop&sat=-20&con=10';"
+                alt="قبل التعديل"
+                class="absolute top-0 right-0 h-full max-w-none object-cover pointer-events-none"
+                loading="lazy"
+              />
+              <div class="absolute top-5 right-5 z-10 bg-walnut/80 text-cream text-xs font-semibold px-3.5 py-1.5 rounded-full shadow-md backdrop-blur-sm">
+                📷 قبل التعديل (خام)
+              </div>
+            </div>
+
+            <!-- Draggable Center Divider Handle -->
+            <div id="retouch-handle">
+              <div id="retouch-button" aria-label="اسحبي للمقارنة">
+                <svg class="w-4 h-4 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8L22 12L18 16"></path>
+                  <path d="M6 8L2 12L6 16"></path>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Drag Instructions -->
+          <div class="text-center mt-4 text-xs text-mocha flex items-center justify-center gap-2">
+            <span>↔️</span>
+            <span>اسحبي الخط الفاصل يميناً ويساراً لمشاهدة الفرق في تصفية البشرة ونعومة الإضاءة</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         G. FILTERABLE PORTFOLIO GALLERY
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="gallery" class="py-24 bg-sand border-t border-olive-soft/60 relative">
+      <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+          <span class="section-tag mb-3 border-apricot/20 text-apricot-dark">🖼️ معرض الأعمال</span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-apricot-dark mt-2 mb-3">
+            لحظات وثقناها بحب
+          </h2>
+          <p class="text-mocha text-sm sm:text-base leading-relaxed">
+            مجموعة مختارة من جلساتنا المميزة تعكس اهتمامنا بالضوء الطبيعي والجمال الهادئ:
+          </p>
+        </div>
+
+        <!-- 9 Arch-Styled Portfolio Grid Items -->
+        <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Item 1: Wedding -->
+          <div class="gallery-card reveal" data-category="wedding" onclick="openLightbox('images/gal-1.webp', 'جلسة زفاف فاخرة وملكية')">
+            <div class="arch-frame aspect-[4/5] bg-cream border border-olive-soft shadow-satin group cursor-pointer overflow-hidden relative">
+              <img src="images/gal-1.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80&auto=format&fit=crop';" alt="جلسة زفاف فاخرة" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-walnut/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span class="text-xs text-cream/80 mb-1">أعراس وخطوبة</span>
+                <p class="font-heading text-lg font-bold text-cream">جلسة زفاف فاخرة وملكية</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Graduation -->
+          <div class="gallery-card reveal" data-category="grad" style="transition-delay: 0.1s;" onclick="openLightbox('images/gal-2.webp', 'فرحة إنجاز التخرج')">
+            <div class="arch-frame aspect-[4/5] bg-cream border border-olive-soft shadow-satin group cursor-pointer overflow-hidden relative">
+              <img src="images/gal-2.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80&auto=format&fit=crop';" alt="فرحة التخرج" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-walnut/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span class="text-xs text-cream/80 mb-1">تخرج</span>
+                <p class="font-heading text-lg font-bold text-cream">فرحة إنجاز التخرج</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Couples -->
+          <div class="gallery-card reveal" data-category="couples" style="transition-delay: 0.2s;" onclick="openLightbox('images/gal-3.webp', 'جلسة كبلز رومانسية خارجية')">
+            <div class="arch-frame aspect-[4/5] bg-cream border border-olive-soft shadow-satin group cursor-pointer overflow-hidden relative">
+              <img src="images/gal-3.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80&auto=format&fit=crop';" alt="جلسة كبلز خارجية" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-walnut/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span class="text-xs text-cream/80 mb-1">كبلز وعائلة</span>
+                <p class="font-heading text-lg font-bold text-cream">جلسة كبلز رومانسية خارجية</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Private Solo -->
+          <div class="gallery-card reveal" data-category="private" onclick="openLightbox('images/gal-4.webp', 'بورتريه استوديو هادئ')">
+            <div class="arch-frame aspect-[4/5] bg-cream border border-olive-soft shadow-satin group cursor-pointer overflow-hidden relative">
+              <img src="images/gal-4.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80&auto=format&fit=crop';" alt="بورتريه استوديو هادئ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-walnut/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span class="text-xs text-cream/80 mb-1">جلسات خاصة</span>
+                <p class="font-heading text-lg font-bold text-cream">بورتريه استوديو هادئ</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Wedding Engagement -->
+          <div class="gallery-card reveal" data-category="wedding" style="transition-delay: 0.1s;" onclick="openLightbox('images/gal-5.webp', 'تفاصيل باقة الورد والمسكة')">
+            <div class="arch-frame aspect-[4/5] bg-cream border border-olive-soft shadow-satin group cursor-pointer overflow-hidden relative">
+              <img src="images/gal-5.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&q=80&auto=format&fit=crop';" alt="تفاصيل باقة الورد" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-walnut/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span class="text-xs text-cream/80 mb-1">أعراس وخطوبة</span>
+                <p class="font-heading text-lg font-bold text-cream">تفاصيل باقة الورد والمسكة</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Graduation -->
+          <div class="gallery-card reveal" data-category="grad" style="transition-delay: 0.2s;" onclick="openLightbox('images/gal-6.webp', 'لقطة الروب وقبعة التخرج')">
+            <div class="arch-frame aspect-[4/5] bg-cream border border-olive-soft shadow-satin group cursor-pointer overflow-hidden relative">
+              <img src="images/gal-6.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?w=800&q=80&auto=format&fit=crop';" alt="لقطة الروب والقبعة" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-walnut/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span class="text-xs text-cream/80 mb-1">تخرج</span>
+                <p class="font-heading text-lg font-bold text-cream">لقطة الروب وقبعة التخرج</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7: Wedding Hall -->
+          <div class="gallery-card reveal" data-category="wedding" onclick="openLightbox('images/gal-7.webp', 'توثيق قاعة العرس وتفاصيل الكوشة')">
+            <div class="arch-frame aspect-[4/5] bg-cream border border-olive-soft shadow-satin group cursor-pointer overflow-hidden relative">
+              <img src="images/gal-7.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519741347686-c1e0aadf4611?w=800&q=80&auto=format&fit=crop';" alt="توثيق قاعة العرس والكوشة" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-walnut/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span class="text-xs text-cream/80 mb-1">أعراس وخطوبة</span>
+                <p class="font-heading text-lg font-bold text-cream">توثيق قاعة العرس وتفاصيل الكوشة</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 8: Couples Family -->
+          <div class="gallery-card reveal" data-category="couples" style="transition-delay: 0.1s;" onclick="openLightbox('images/gal-8.webp', 'لقطات عائلية دافئة وعفوية')">
+            <div class="arch-frame aspect-[4/5] bg-cream border border-olive-soft shadow-satin group cursor-pointer overflow-hidden relative">
+              <img src="images/gal-8.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80&auto=format&fit=crop';" alt="لقطات عائلية دافئة" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-walnut/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span class="text-xs text-cream/80 mb-1">كبلز وعائلة</span>
+                <p class="font-heading text-lg font-bold text-cream">لقطات عائلية دافئة وعفوية</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 9: Private Solo Portrait -->
+          <div class="gallery-card reveal" data-category="private" style="transition-delay: 0.2s;" onclick="openLightbox('images/gal-9.webp', 'جلسة ميلاد ودلال أنثوي')">
+            <div class="arch-frame aspect-[4/5] bg-cream border border-olive-soft shadow-satin group cursor-pointer overflow-hidden relative">
+              <img src="images/gal-9.webp" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80&auto=format&fit=crop';" alt="جلسة ميلاد ودلال" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-walnut/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span class="text-xs text-cream/80 mb-1">جلسات خاصة</span>
+                <p class="font-heading text-lg font-bold text-cream">جلسة ميلاد ودلال أنثوي</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         H. PHILOSOPHY & VISION SECTION (رؤيتنا وفلسفتنا)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="philosophy" class="py-24 bg-cream relative overflow-hidden">
+      <!-- Subtle Botanical Line-art SVGs -->
+      <svg class="botanical-art absolute -top-10 -left-10 w-72 h-72 z-0 opacity-15" viewBox="0 0 200 200" fill="none">
+        <path d="M40,160 Q80,100 160,40" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M70,120 Q55,100 65,85 Q75,100 70,120 Z" stroke-width="1.2" fill="#FAF6F0"/>
+        <path d="M100,95 Q90,75 105,65 Q115,80 100,95 Z" stroke-width="1.2" fill="#FAF6F0"/>
+      </svg>
+      <svg class="botanical-art absolute -bottom-10 -right-10 w-72 h-72 z-0 opacity-15" viewBox="0 0 200 200" fill="none">
+        <path d="M160,200 Q120,120 40,60" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M130,150 Q145,135 135,120 Q125,135 130,150 Z" stroke-width="1.2" fill="#FAF6F0"/>
+      </svg>
+
+      <div class="max-w-4xl mx-auto px-6 md:px-12 relative z-10">
+        
+        <!-- Elegant Centered Editorial Card Matching Design Language -->
+        <div class="bg-sand rounded-[36px] p-8 sm:p-14 md:p-16 border-2 border-olive-soft shadow-satin text-center relative overflow-hidden reveal">
+          
+          <!-- Subtle Arch Watermark Shape in Background -->
+          <div class="absolute inset-x-12 -top-24 h-52 arch-frame bg-cream/50 border border-olive-soft/40 -z-0 pointer-events-none"></div>
+
+          <div class="relative z-10 flex flex-col items-center">
+            
+            <!-- Badge / Section Tag -->
+            <div class="section-tag mb-6 bg-cream shadow-xs">
+              <span class="text-olive">🌿</span>
+              <span class="font-semibold text-olive">شرف التوثيق</span>
+            </div>
+
+            <!-- Main Headline in El Messiri -->
+            <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-apricot-dark leading-snug mb-6">
+              المكان خياركم.. والخلود علينا
+            </h2>
+
+            <!-- Delicate Decorative Olive Divider -->
+            <div class="flex items-center justify-center gap-3 w-32 my-1">
+              <div class="h-[1px] bg-olive-soft flex-1"></div>
+              <div class="w-2 h-2 rotate-45 border border-olive bg-cream"></div>
+              <div class="h-[1px] bg-olive-soft flex-1"></div>
+            </div>
+
+            <!-- Poetic Statement Body in Alexandria -->
+            <p class="text-mocha text-base sm:text-lg md:text-xl font-normal leading-relaxed max-w-2xl mt-6 mb-8">
+              لا نقيّد فرحتكم بحدود جغرافية؛ سواءً اخترتم دفء بيوتكم، هدوء استوديو مغلَق، قاعة زفافكم، أو مساحة مفتوحة تحت ضوء السماء.. نحن نحضر لنحوّل المكان الذي تختارونه إلى لوحة أثرية تبقى معكم إلى الأبد.
+            </p>
+
+            <!-- Supporting Quote / Sub-badge -->
+            <div class="inline-flex items-center gap-2.5 bg-cream/90 backdrop-blur-sm border border-olive-soft rounded-full px-6 py-3 shadow-sm text-xs sm:text-sm font-heading font-medium text-apricot-dark mb-8">
+              <span>✨</span>
+              <span>&ldquo;نملك شرف توثيق أصدق وأجمل لحظات العمر بأمانة وحب&rdquo;</span>
+            </div>
+
+            <!-- CTA Action -->
+            <div>
+              <a href="https://wa.me/9647724679701?text=السلام عليكم 👋 أود حجز جلسة تصوير في موقعنا المفضل 📸✨"
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn-olive text-xs sm:text-sm py-3 px-8 shadow-sm">
+                <span>شاركينا موقع جلستج المفضلة</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         I. CLEAR BOOKING RULES & TIMELINE + STATS BANNER
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="rules" class="py-24 bg-sand border-t border-olive-soft/60 relative">
+      <div class="max-w-6xl mx-auto px-6 md:px-12 relative z-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+          <span class="section-tag mb-3 border-apricot/20 text-apricot-dark">📋 الشفافية والالتزام</span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-apricot-dark mt-2 mb-3">
+            قوانين الحجز والاستلام
+          </h2>
+          <p class="text-mocha text-sm sm:text-base leading-relaxed">
+            خطوات واضحة وشفافة لضمان راحتج وحصولج على أجمل نتيجة فوتوغرافية في الوقت المحدد:
+          </p>
+        </div>
+
+        <!-- 5 Comprehensive Rule Cards (Row 1: 3 cards, Row 2: 2 wider cards) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+          
+          <!-- Card 1: 01 · الحجز، العربون والدفع -->
+          <div class="bg-cream rounded-3xl p-7 sm:p-8 border border-olive-soft shadow-satin flex flex-col justify-between reveal hover:border-olive transition-all duration-300">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-12 h-12 arch-frame-sm bg-sand border border-apricot/40 flex items-center justify-center text-apricot-dark font-heading text-xl font-bold">
+                  01
+                </div>
+                <span class="text-[11px] font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">تأكيد الموعد</span>
+              </div>
+              <h3 class="font-heading text-xl sm:text-2xl font-bold text-apricot-dark mb-4">الحجز، العربون والدفع</h3>
+              <ul class="space-y-3 text-xs sm:text-sm text-mocha leading-relaxed">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span>يتم <strong>تثبيت الحجز حصراً بعد دفع العربون</strong> لضمان حجز الموعد وتفرغ الكادر التام لتغطية مناسبتج.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span>قيمة العربون: <strong>50% من مبلغ الجلسة الإجمالي</strong>.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span>في حال تأجيل أو إلغاء الموعد بعد تثبيت الحجز، <strong>يُفقد العربون نهائياً ولا توجد أي استثناءات</strong>.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span>يتم <strong>سداد باقي المبلغ يوم الجلسة مباشرة</strong> قبل البدء أو عند الانتهاء.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-olive-soft/70 flex items-center justify-between text-xs font-semibold text-olive">
+              <span>🔒 تثبيت رسمي معتمد</span>
+              <span class="text-[11px] text-mocha font-normal">عربون 50%</span>
+            </div>
+          </div>
+
+          <!-- Card 2: 02 · الالتزام بالوقت وساعات العمل -->
+          <div class="bg-cream rounded-3xl p-7 sm:p-8 border border-olive-soft shadow-satin flex flex-col justify-between reveal hover:border-olive transition-all duration-300" style="transition-delay: 0.1s;">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-12 h-12 arch-frame-sm bg-sand border border-apricot/40 flex items-center justify-center text-apricot-dark font-heading text-xl font-bold">
+                  02
+                </div>
+                <span class="text-[11px] font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">إدارة الوقت</span>
+              </div>
+              <h3 class="font-heading text-xl sm:text-2xl font-bold text-apricot-dark mb-4">الالتزام بالوقت وساعات العمل</h3>
+              <ul class="space-y-3 text-xs sm:text-sm text-mocha leading-relaxed">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span>نرجو <strong>الالتزام التام بالموعد المحدد لبدء الجلسة</strong> لضمان استغلال كامل الوقت المخصص والمتفق عليه في الباقة.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span>يبدأ احتساب وقت الجلسة من التوقيت المثبت مسبقاً، لذا فإن الحضور الدقيق يمنحج جلسة هادئة ومتكاملة بدون استعجال.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span>في حال تأخر الزبون والرغبة في إضافة وقت إضافي للجلسة: <strong>يتم احتساب الساعة الإضافية بسعر 50,000 د.ع</strong> (بشرط عدم تعارض ذلك مع موعد جلسة أخرى تالية).</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-olive-soft/70 flex items-center justify-between text-xs font-semibold text-olive">
+              <span>⏱️ انضباط ودقة بالمواعيد</span>
+              <span class="text-[11px] text-mocha font-normal">50,000 د.ع / ساعة إضافية</span>
+            </div>
+          </div>
+
+          <!-- Card 3: 03 · آلية تسليم الصور واختيار اللقطات -->
+          <div class="bg-cream rounded-3xl p-7 sm:p-8 border border-olive-soft shadow-satin flex flex-col justify-between reveal hover:border-olive transition-all duration-300 md:col-span-2 lg:col-span-1" style="transition-delay: 0.2s;">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-12 h-12 arch-frame-sm bg-sand border border-apricot/40 flex items-center justify-center text-apricot-dark font-heading text-xl font-bold">
+                  03
+                </div>
+                <span class="text-[11px] font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">التسليم الرقمي</span>
+              </div>
+              <h3 class="font-heading text-xl sm:text-2xl font-bold text-apricot-dark mb-4">تسليم الصور واختيار اللقطات</h3>
+              <ul class="space-y-3 text-xs sm:text-sm text-mocha leading-relaxed">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span>تُرسل <strong>جميع الصور بدقة عالية كاملة عبر تطبيق التليجرام بعد أسبوع واحد</strong> من تاريخ الجلسة.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span>يتم اختيار الصور حصراً عبر: <strong>(Reply) أو (Forward) أو كتابة اسم الصورة بالكامل</strong>؛ وغير ذلك لا يُعتمد تاريخ الاختيار رسمياً.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-olive font-bold mt-0.5">•</span>
+                  <span><strong>أقصى مدة مسموحة لاختيار الصور هي 6 أشهر</strong> من تاريخ إرسالها؛ وبعد انتهاء هذه المدة تُحذف الصور نهائياً ولا يمكن المطالبة بها تحت أي ظرف لضمان حماية سعة الأرشيف.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-4 border-t border-olive-soft/70 flex items-center justify-between text-xs font-semibold text-olive">
+              <span>📲 إرسال بعد أسبوع بالتليجرام</span>
+              <span class="text-[11px] text-mocha font-normal">مهلة الاختيار 6 أشهر</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2: 2 Wider Cards (Cards 04 & 05) -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+
+          <!-- Card 4: 04 · حدود التعديل ومواعيد التسليم والمطبوعات -->
+          <div class="bg-cream rounded-3xl p-7 sm:p-8 border border-olive-soft shadow-satin flex flex-col justify-between reveal hover:border-olive transition-all duration-300">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-12 h-12 arch-frame-sm bg-sand border border-apricot/40 flex items-center justify-center text-apricot-dark font-heading text-xl font-bold">
+                  04
+                </div>
+                <span class="text-[11px] font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">الريتاتش والطباعة</span>
+              </div>
+              <h3 class="font-heading text-xl sm:text-2xl font-bold text-apricot-dark mb-4">حدود التعديل ومواعيد التسليم والمطبوعات</h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm text-mocha leading-relaxed">
+                <div class="space-y-3">
+                  <p class="flex items-start gap-2.5">
+                    <span class="text-olive font-bold mt-0.5">•</span>
+                    <span><strong>التعديل المشمول بالباقة:</strong> يتضمن تنقية البشرة الاحترافية + موازنة الإضاءة والألوان (بما يناسب الطباعة الفاخرة) مع الحفاظ التام على الملامح الطبيعية.</span>
+                  </p>
+                  <p class="flex items-start gap-2.5">
+                    <span class="text-olive font-bold mt-0.5">•</span>
+                    <span><strong>التعديلات الإضافية:</strong> أي تعديلات خاصة (تغيير ملامح، تغيير خلفيات، إضافات معقدة) تخضع لأجور إضافية ويجب كتابة تفاصيلها بنفس يوم اختيار الصور.</span>
+                  </p>
+                </div>
+                <div class="space-y-3">
+                  <p class="flex items-start gap-2.5">
+                    <span class="text-olive font-bold mt-0.5">•</span>
+                    <span><strong>مدة التسليم:</strong> تُسلّم الصور المعدلة والمطبوعة <strong>خلال 40 إلى 60 يوماً من تاريخ اختيار الصور</strong> (وليس من تاريخ يوم الجلسة) لضمان دقة التجليد والطباعة الأرشيفية.</span>
+                  </p>
+                  <p class="flex items-start gap-2.5">
+                    <span class="text-olive font-bold mt-0.5">•</span>
+                    <span>يرجى عدم المطالبة بالصور قبل المدة المحددة؛ حيث يتم العمل والتسليم وفق نظام وترتيب الحجوزات الصارم حرصاً على إتقان كل عمل.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-olive-soft/70 flex items-center justify-between text-xs font-semibold text-olive">
+              <span>🎨 ريتاتش طبيعي يناسب الطباعة</span>
+              <span class="text-[11px] text-mocha font-normal">تسليم خلال 40 – 60 يوماً من الاختيار</span>
+            </div>
+          </div>
+
+          <!-- Card 5: 05 · فديو البرومو وطريقة تثبيت الحجز -->
+          <div class="bg-cream rounded-3xl p-7 sm:p-8 border border-olive-soft shadow-satin flex flex-col justify-between reveal hover:border-olive transition-all duration-300" style="transition-delay: 0.1s;">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <div class="w-12 h-12 arch-frame-sm bg-sand border border-apricot/40 flex items-center justify-center text-apricot-dark font-heading text-xl font-bold">
+                  05
+                </div>
+                <span class="text-[11px] font-semibold text-olive bg-sand px-3 py-1 rounded-full border border-olive-soft">البرومو وخطوات الحجز</span>
+              </div>
+              <h3 class="font-heading text-xl sm:text-2xl font-bold text-apricot-dark mb-4">فديو البرومو وطريقة تثبيت الحجز</h3>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm text-mocha leading-relaxed mb-4">
+                <div class="space-y-3">
+                  <p class="flex items-start gap-2.5">
+                    <span class="text-olive font-bold mt-0.5">•</span>
+                    <span><strong>فيديو البرومو:</strong> في حال تضمنت الباقة فديو برومو، يتم إرساله بعد استلام الصور المطبوعة، ويتوفر خيار إضافة فلاش ميموري (USB) فاخر لحفظ الصور أو الفيديو بأجور رمزية.</span>
+                  </p>
+                  <!-- Discount Badge Highlight -->
+                  <div class="p-3 bg-sand/80 rounded-2xl border border-olive-soft text-xs text-olive font-medium flex items-center gap-2">
+                    <span class="text-base">✨</span>
+                    <span>خصم 10% فوري عند الموافقة على نشر الصور أو حجز جلستين معاً.</span>
+                  </div>
+                </div>
+
+                <div>
+                  <p class="font-bold text-walnut mb-2 text-xs">طريقة الحجز السريعة (4 خطوات):</p>
+                  <ol class="space-y-1.5 text-xs text-mocha">
+                    <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-olive text-cream text-[10px] font-bold flex items-center justify-center flex-shrink-0">1</span><span>اختيار نوع الجلسة والباقة المناسبة</span></li>
+                    <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-olive text-cream text-[10px] font-bold flex items-center justify-center flex-shrink-0">2</span><span>تحديد وتنسيق الموقع المناسب</span></li>
+                    <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-olive text-cream text-[10px] font-bold flex items-center justify-center flex-shrink-0">3</span><span>إرسال التفاصيل عبر الواتساب لتأكيد التوفر</span></li>
+                    <li class="flex items-center gap-2"><span class="w-5 h-5 rounded-full bg-olive text-cream text-[10px] font-bold flex items-center justify-center flex-shrink-0">4</span><span>سداد العربون لتثبيت التاريخ رسمياً</span></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-olive-soft/70 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+              <div class="flex items-center gap-2 text-olive font-semibold">
+                <span>💬</span>
+                <span>الرد السريع متاح يومياً</span>
+              </div>
+              <a href="https://wa.me/9647724679701?text=السلام عليكم 👋 اطلعت على شروط وقوانين الحجز وأود تثبيت موعد جلستي 📸✨" target="_blank" rel="noopener noreferrer" class="btn-olive text-xs py-2 px-5 whitespace-nowrap w-full sm:w-auto shadow-sm">
+                احجزي موعدج الآن عبر الواتساب ←
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Credibility Stats Banner (Placed Right Below the Rules) -->
+        <div class="bg-cream rounded-3xl p-8 md:p-12 border-2 border-olive-soft shadow-satin reveal">
+          <div class="text-center max-w-xl mx-auto mb-8">
+            <span class="text-xs font-semibold text-apricot-dark bg-sand px-3.5 py-1 rounded-full border border-apricot/20">✨ ثقة وخبرة موثقة</span>
+            <h3 class="font-heading text-2xl sm:text-3xl font-bold text-apricot-dark mt-2">مسيرة من الشغف والتوثيق</h3>
+          </div>
+
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            
+            <div class="p-4 rounded-2xl bg-sand/60 border border-olive-soft/70">
+              <p class="font-heading text-3xl sm:text-4xl font-bold text-olive mb-1">+500</p>
+              <p class="text-xs sm:text-sm font-semibold text-walnut">جلسة مكتملة</p>
+              <p class="text-[11px] text-mocha mt-0.5">أعراس وتخرج وبورتريه</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-sand/60 border border-olive-soft/70">
+              <p class="font-heading text-3xl sm:text-4xl font-bold text-olive mb-1">+4</p>
+              <p class="text-xs sm:text-sm font-semibold text-walnut">سنوات خبرة</p>
+              <p class="text-[11px] text-mocha mt-0.5">شغف وتفرد فوتوغرافي</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-sand/60 border border-olive-soft/70">
+              <p class="font-heading text-3xl sm:text-4xl font-bold text-olive mb-1">100%</p>
+              <p class="text-xs sm:text-sm font-semibold text-walnut">كادر نسائي</p>
+              <p class="text-[11px] text-mocha mt-0.5">راحة وأمان وخصوصية</p>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-sand/60 border border-olive-soft/70">
+              <p class="font-heading text-3xl sm:text-4xl font-bold text-olive mb-1">10%</p>
+              <p class="text-xs sm:text-sm font-semibold text-walnut">خصم إضافي</p>
+              <p class="text-[11px] text-mocha mt-0.5">عند الموافقة على نشر الصور</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════
+         J. DIRECT CONTACT & FOOTER
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="contact" class="py-24 bg-cream relative">
+      <div class="max-w-5xl mx-auto px-6 md:px-12 relative z-10">
+        
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+          <span class="section-tag mb-3 border-apricot/20 text-apricot-dark">💬 تواصل مباشر</span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-apricot-dark mt-2 mb-3">
+            جاهزة لتوثيق يومج المميز؟
+          </h2>
+          <p class="text-mocha text-sm sm:text-base leading-relaxed">
+            راسليني مباشرة للاستفسار عن التواريخ المتاحة أو لتخصيص باقة تناسب رغبتج وميزانيتج:
+          </p>
+        </div>
+
+        <!-- Direct Action Grid (WhatsApp, Telegram, Instagram) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          
+          <!-- WhatsApp -->
+          <a href="https://wa.me/9647724679701?text=السلام%20عليكم%20👋%20أود%20الاستفسار%20عن%20المواعيد%20المتوفرة%20لجلسات%20التصوير%20📸"
+             target="_blank" rel="noopener noreferrer"
+             class="bg-sand hover:bg-olive hover:text-cream text-walnut p-6 sm:p-7 rounded-3xl border border-olive-soft transition-all duration-300 shadow-satin flex flex-col items-center text-center group reveal">
+            <div class="w-12 h-12 rounded-full bg-cream group-hover:bg-cream/20 flex items-center justify-center text-olive group-hover:text-cream text-2xl mb-3 transition-colors">
+              💬
+            </div>
+            <h4 class="font-heading font-bold text-base text-apricot-dark mb-1">واتساب سريع</h4>
+            <p class="text-xs opacity-75 font-alexandria mb-3" dir="ltr">0772 467 9701</p>
+            <span class="text-xs font-semibold text-olive group-hover:text-cream underline">دردشة فورية ←</span>
+          </a>
+
+          <!-- Telegram -->
+          <a href="https://t.me/photo_hur"
+             target="_blank" rel="noopener noreferrer"
+             class="bg-sand hover:bg-olive hover:text-cream text-walnut p-6 sm:p-7 rounded-3xl border border-olive-soft transition-all duration-300 shadow-satin flex flex-col items-center text-center group reveal" style="transition-delay: 0.1s;">
+            <div class="w-12 h-12 rounded-full bg-cream group-hover:bg-cream/20 flex items-center justify-center text-olive group-hover:text-cream text-2xl mb-3 transition-colors">
+              ✈️
+            </div>
+            <h4 class="font-heading font-bold text-base text-apricot-dark mb-1">تليغرام</h4>
+            <p class="text-xs opacity-75 font-alexandria mb-3" dir="ltr">@photo_hur</p>
+            <span class="text-xs font-semibold text-olive group-hover:text-cream underline">إرسال رسالة ←</span>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://instagram.com/photo_hawraa"
+             target="_blank" rel="noopener noreferrer"
+             class="bg-sand hover:bg-olive hover:text-cream text-walnut p-6 sm:p-7 rounded-3xl border border-olive-soft transition-all duration-300 shadow-satin flex flex-col items-center text-center group reveal" style="transition-delay: 0.2s;">
+            <div class="w-12 h-12 rounded-full bg-cream group-hover:bg-cream/20 flex items-center justify-center text-olive group-hover:text-cream text-2xl mb-3 transition-colors">
+              📷
+            </div>
+            <h4 class="font-heading font-bold text-base text-apricot-dark mb-1">إنستغرام</h4>
+            <p class="text-xs opacity-75 font-alexandria mb-3" dir="ltr">@photo_hawraa</p>
+            <span class="text-xs font-semibold text-olive group-hover:text-cream underline">مشاهدة اليوميات ←</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       EDITORIAL FOOTER
+  ═══════════════════════════════════════════════════════════════ -->
+  <footer class="bg-sand border-t border-olive-soft/80 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-olive-soft">
+        
+        <!-- Logo & Note -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-right">
+          <div class="flex items-center gap-2.5 mb-2">
+            <div class="w-8 h-8 arch-frame-sm bg-cream border border-olive-soft flex items-center justify-center text-olive">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+            </div>
+            <span class="font-heading text-2xl font-bold text-apricot-dark">حور</span>
+          </div>
+          <p class="text-xs text-mocha max-w-sm">
+            مصورة فوتوغرافية محترفة · نوثق أجمل لحظاتج بحساسية فنية أنثوية وخصوصية تامة 100%.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-mocha font-medium">
+          <a href="#gallery" class="hover:text-walnut transition-colors">المعرض</a>
+          <a href="#retouch" class="hover:text-walnut transition-colors">قبل وبعد</a>
+          <a href="#packages" class="hover:text-walnut transition-colors">الباقات</a>
+          <a href="#philosophy" class="hover:text-walnut transition-colors">رؤيتنا</a>
+          <a href="#rules" class="hover:text-walnut transition-colors">القوانين والحجز</a>
+        </div>
+
+      </div>
+
+      <!-- Bottom Line -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-mocha text-center sm:text-right">
+        <p>© 2026 جميع الحقوق محفوظة لـ <strong>حور</strong> · تم التصميم والتطوير بكل حب وعناية 🌿</p>
+        <p>العراق · متاحون للتغطية أينما اخترتم</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       LIGHTBOX MODAL
+  ═══════════════════════════════════════════════════════════════ -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-walnut/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox(event)">
+    <button onclick="closeLightboxDirect()" class="absolute top-6 left-6 text-cream hover:text-sand text-3xl font-light w-10 h-10 rounded-full bg-walnut/50 flex items-center justify-center border border-cream/20 focus:outline-none" aria-label="إغلاق">
+      &times;
+    </button>
+    <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt="عرض تفصيلي" class="max-h-[80vh] max-w-full rounded-2xl arch-frame shadow-2xl object-contain border border-cream/20" />
+      <p id="lightbox-caption" class="text-cream text-xs sm:text-sm font-heading font-medium mt-4 text-center px-4 py-1.5 rounded-full bg-walnut/70 border border-cream/20"></p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       FLOATING WHATSAPP BUTTON (BOTTOM-LEFT)
+  ═══════════════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/9647724679701?text=السلام عليكم 👋 أود الاستفسار وحجز موعد جلسة تصوير 📸"
+     target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-6 left-6 z-40 bg-olive hover:bg-olive-dark text-cream w-14 h-14 rounded-full flex items-center justify-center shadow-satin-hover hover:scale-105 active:scale-95 transition-all duration-300 border-2 border-cream"
+     aria-label="تواصل مباشر عبر الواتساب">
+    <!-- WhatsApp Icon -->
+    <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       VANILLA JAVASCRIPT LOGIC
+  ═══════════════════════════════════════════════════════════════ -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // ─── 1. Navbar Scroll Effect ─────────────────────────────────
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // ─── 2. Mobile Menu Toggle ───────────────────────────────────
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      // ─── 3. Scroll Reveal Animation ──────────────────────────────
+      const reveals = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      reveals.forEach(el => revealObserver.observe(el));
+
+      // ─── 4. Retouch Before & After Slider (RTL Compatible) ────────
+      const sliderContainer = document.getElementById('retouch-slider-container');
+      const beforeWrapper = document.getElementById('retouch-before-wrapper');
+      const handle = document.getElementById('retouch-handle');
+      const beforeImg = document.getElementById('retouch-before-img');
+
+      if (sliderContainer && beforeWrapper && handle && beforeImg) {
+        let isSliding = false;
+
+        function syncImgWidth() {
+          const containerWidth = sliderContainer.offsetWidth;
+          beforeImg.style.width = containerWidth + 'px';
+        }
+
+        window.addEventListener('resize', syncImgWidth);
+        syncImgWidth();
+
+        function setSliderPos(clientX) {
+          const rect = sliderContainer.getBoundingClientRect();
+          let posX = clientX - rect.left;
+          if (posX < 0) posX = 0;
+          if (posX > rect.width) posX = rect.width;
+
+          // In RTL layout, distance from right edge
+          const fromRight = rect.width - posX;
+          const pct = (fromRight / rect.width) * 100;
+
+          beforeWrapper.style.width = pct + '%';
+          handle.style.right = pct + '%';
+        }
+
+        sliderContainer.addEventListener('mousedown', (e) => {
+          isSliding = true;
+          setSliderPos(e.clientX);
+        });
+
+        window.addEventListener('mousemove', (e) => {
+          if (!isSliding) return;
+          setSliderPos(e.clientX);
+        });
+
+        window.addEventListener('mouseup', () => {
+          isSliding = false;
+        });
+
+        // Touch support
+        sliderContainer.addEventListener('touchstart', (e) => {
+          isSliding = true;
+          setSliderPos(e.touches[0].clientX);
+        }, { passive: true });
+
+        window.addEventListener('touchmove', (e) => {
+          if (!isSliding) return;
+          setSliderPos(e.touches[0].clientX);
+        }, { passive: true });
+
+        window.addEventListener('touchend', () => {
+          isSliding = false;
+        });
+      }
+
+    });
+
+    // ─── 5. Tab Switching (Session Packages Hub) ─────────────────
+    function switchTab(tabId) {
+      const tabs = ['eng', 'grad', 'wedding', 'henna', 'maternity'];
+      tabs.forEach(t => {
+        const btn = document.getElementById('tab-btn-' + t);
+        const panel = document.getElementById('tab-panel-' + t);
+
+        if (!btn || !panel) return;
+
+        if (t === tabId) {
+          btn.classList.add('bg-olive', 'text-cream', 'shadow-sm');
+          btn.classList.remove('bg-cream', 'text-mocha', 'border', 'border-olive-soft');
+          panel.classList.remove('hidden');
+          panel.classList.add('block');
+        } else {
+          btn.classList.remove('bg-olive', 'text-cream', 'shadow-sm');
+          btn.classList.add('bg-cream', 'text-mocha', 'border', 'border-olive-soft');
+          panel.classList.add('hidden');
+          panel.classList.remove('block');
+        }
+      });
+    }
+
+    // ─── 6. Lightbox Modal ───────────────────────────────────────
+    function openLightbox(src, caption) {
+      const modal = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+
+      if (modal && img && cap) {
+        img.src = src;
+        cap.textContent = caption || '';
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeLightbox(e) {
+      if (e.target.id === 'lightbox-modal') {
+        closeLightboxDirect();
+      }
+    }
+
+    function closeLightboxDirect() {
+      const modal = document.getElementById('lightbox-modal');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightboxDirect();
+      }
+    });
+  </script>
+
+</body>
+</html>
